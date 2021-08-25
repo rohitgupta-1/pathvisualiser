@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Astar.html">ASTAR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="margin: 2%;">
+        <div class="description">
+            <p class="display-6" style="text-align: center;"> A STAR</p>
+            A* Search algorithm is one of the best and popular technique used in path-finding and graph traversals
+            A* Search algorithms unlike other traversal techniques it has brains.It means is that it is really a smart
+            algorithm which separates it from the other conventional algorithms
+            A-Star Algorithm is one kind of heuristic search algorithm, which obtains mobile path
+            by continuous search for paths approaching to destination.
+            A-Star Algorithm is:f(n)=g(n)+h(n).
+            <br>
+            f(n) = total estimated cost of path through node n
+            <br>
+            g(n) = cost so far to reach node n
+            <br>
+            h(n) = estimated cost from n to goal. This is the heuristic part of the cost function, so it is like a guess.
+        </div>
+        <div>
+            <p class="display-5"> Heuristics </p>
+            Using a good heuristic is important in determining the performance of A*
+            The value of h(n) would ideally equal the exact cost of reaching the destination. This is, however,
+            not possible because we do not even know the path. We can, however, choose a method that will give us the
+            exact value some of the time, such as when traveling in a straight line with no obstacles. This will result
+            in a perfect performance of A*
+        </div>
+
+        <div class="">
+            <!-- <img src="./images/Astar.png" alt="" srcset=""> -->
+            <img src="./images/Astar.png" class="rounded mx-auto d-block" alt="...">
+        </div>
+        <div class="jumbotron">
+            <h3 class="display-8"> APPLICATIONS OF A STAR </h3>
+            A* is often used for the common pathfinding problem in applications such as video games
+               
+        </div>
+        <div class="jumbotron ml-2" style="text-align: center;">
+            <h1 class="display-4">ASTAR VISUALISER</h1>
+            <!-- body { text-align: center; } -->
+            <script src="sketch.js"></script>
+            <p class="lead">Implemented using HTML CSS BOOTSRAP and P5JS.</p>
+            <hr class="my-4">
+            <p>This visualises how the ASTAR moves to the next neighboring Node.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

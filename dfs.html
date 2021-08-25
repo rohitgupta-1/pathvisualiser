@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="margin: 2%;">
+        <div class="description">
+            Depth-first search (DFS) is an algorithm for searching a graph or tree data structure. The algorithm starts
+            at the root (top) node of a tree and goes as far as it can down a given branch (path), then backtracks until
+            it finds an unexplored path, and then explores it. The algorithm does this until the entire graph has been
+            explored
+
+
+        </div>
+
+        <div>
+            <img src="./images/dfs.jpg" alt="" srcset="">
+        </div>
+        <div>
+            <h3> <strong>APPLICATIONS OF DFS</strong> </h3>
+            <p>
+            <p> <strong> Detecting cycle in a graph :</strong> A graph has cycle if and only if we see a back edge
+                during DFS. So we can run DFS for the graph and check for back edges.</p>
+            <p> <strong> Path Finding:</strong> DFS can be implemented to get a path from a given source node to a
+                destination node It gives on of the path if exists.</p>
+            <p> <strong> TopoLogical Sorting:</strong> Topological Sorting is mainly used for scheduling jobs from the
+                given dependencies among jobs. In computer science, applications of this type arise in instruction
+                scheduling, ordering of formula cell evaluation when recomputing formula values in spreadsheets, logic
+                synthesis, determining the order of compilation tasks to perform in makefiles, data serialization, and
+                resolving symbol dependencies in linkers.</p>
+            <p> <strong> Bipartiton of a Graphs:</strong> DFS can be used to check that by using two colors can we color the graph nodes such that no two directly connected component have same color.</p>
+            <p> <strong> Solving Puzzles:</strong> Solving Puzzles require backtracking which means that we have to undo a lot of steps that we have done it can be only done using DFS by exploring every possiblities </p>
+            </p>
+        </div>
+        <div class="jumbotron ml-2" style="text-align: center;">
+            <h1 class="display-4">DFS VISUALISER</h1>
+            <!-- body { text-align: center; } -->
+            <script src="dfs.js"></script>
+            <p class="lead">Implemented using HTML CSS BOOTSRAP and P5JS.</p>
+            <hr class="my-4">
+            <p>This visualises how the DFS moves and backtracks when it does not reach its destination.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

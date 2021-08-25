@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="margin: 2%;">
+
+        <div class="description">
+            <div class="display-4" style="text-align: center;">BFS</div>
+            Breadth-first search (BFS) is an algorithm that is used to graph data or searching tree or traversing
+            structure
+            The full form of BFS is the Breadth-first search.
+            The algorithm efficiently visits and marks all the key nodes in a graph in an accurate breadthwise fashion.
+            This
+            algorithm selects a single node (initial or source point) in a graph and then visits all the nodes adjacent
+            to
+            the selected node.BFS accesses these nodes one by one.
+            Once the algorithm visits and marks the starting node, then it moves towards the nearest unvisited nodes and
+            analyses them. Once visited, all nodes are marked. These iterations continue until all the nodes of the
+            graph
+            have been successfully visited and marked.
+        </div>
+
+        <div>
+            <img src="./images/BFS1.jpg" alt="" srcset="">
+        </div>
+        <div>
+            <h3> <strong>APPLICATIONS OF BFS</strong> </h3>
+            <p>
+            <p> <strong> Un-weighted Graphs:</strong> BFS algorithm can easily create the shortest path and a minimum
+                spanning tree to visit
+                all the vertices of the graph in the shortest time possible with high accuracy.</p>
+            <p> <strong> P2P Networks:</strong> BFS can be implemented to locate all the nearest or neighboring nodes in
+                a peer to peer network. This will find the required data faster.</p>
+            <p> <strong> Web Crawlers:</strong> Search engines or web crawlers can easily build multiple levels of
+                indexes by employing BFS.
+                BFS implementation starts from the source, which is the web page, and then it visits all the links from
+                that
+                source.</p>
+            <p> <strong> Navigation Systems:</strong> BFS can help find all the neighboring locations from the main or
+                source location.</p>
+            <p> <strong> Network Broadcasting:</strong> A broadcasted packet is guided by the BFS algorithm to find and
+                reach all the nodes it
+                has the address for.</p>
+            </p>
+        </div>
+        <div class="jumbotron ml-2" style="text-align: center;">
+            <h1 class="display-4">BFS VISUALISER</h1>
+            <!-- body { text-align: center; } -->
+            <script src="bfs.js"></script>
+            <p class="lead">Implemented using HTML CSS BOOTSRAP  and P5JS.</p>
+            <hr class="my-4">
+            <p>This visualises how the BFS moves to its next nearest neighbour.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>
